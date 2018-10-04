@@ -16,9 +16,13 @@ public class RunAI {
         System.debug(myResult);
         for (Integer i = 0; i < myResult.probabilities.size(); i++){
             System.debug(myResult.probabilities.get(i).label + ': ' + myResult.probabilities.get(i).probability);
-            //while iterating through stuff is cool, often you'll just need to grab the first element in the list
-            //so practical approach would often just require a fetch of myResult.probabilities.get(0) to get relevant result
+            // While iterating through stuff is cool, often you'll just need to grab the first element in the list.
+            // So practical approach would often just require a fetch of myResult.probabilities.get(0) to get relevant result
         } 
     }
+    
+    // Disclaimer; This is just a sample implementation by using the classes built by this repo 
+    // https://github.com/muenzpraeger/salesforce-einstein-platform-apex
+    // So credit goes to that repo and its owner, this is just a sample of calling on it
     
 }
